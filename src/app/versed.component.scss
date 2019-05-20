@@ -1,0 +1,39 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  /* HolyGrail Layout with CSSGrid Areas */
+  tk-header     { grid-area: header; }
+  router-outlet { grid-area: router; } /* Placeholder for router - HIDE! */
+  tk-sidebar    { grid-area: sidebar; }
+  tk-workspace  { grid-area: workspace; }
+  tk-footer     { grid-area: footer; }
+  :host {
+    display: grid;
+    grid-template-areas:    "header header"
+                            "router router"
+                            "sidebar"
+                            "footer footer";
+    grid-template-columns:  0px 1fr;
+    grid-template-rows:     50px
+                            0px
+                            1fr
+                            14px;
+    min-height: 100vh;
+  }
+  /* Small width layout e.g. mobile  */
+  @media screen and (max-width: 600px) {
+    :host {
+      grid-template-areas:    "header"
+                              "router"
+                              "sidebar"
+                              "footer";
+      grid-template-columns:  100%;
+      grid-template-rows:     50px
+                              0px
+                              30px
+                              1fr
+                              30px;
+    }
+  }
+  

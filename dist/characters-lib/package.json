@@ -1,0 +1,21 @@
+{
+  "name": "characters-lib",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
+  },
+  "main": "bundles/characters-lib.umd.js",
+  "module": "fesm5/characters-lib.js",
+  "es2015": "fesm2015/characters-lib.js",
+  "esm5": "esm5/characters-lib.js",
+  "esm2015": "esm2015/characters-lib.js",
+  "fesm5": "fesm5/characters-lib.js",
+  "fesm2015": "fesm2015/characters-lib.js",
+  "typings": "characters-lib.d.ts",
+  "metadata": "characters-lib.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
