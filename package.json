@@ -22,7 +22,10 @@
     "@angular/platform-browser": "^7.2.15",
     "@angular/platform-browser-dynamic": "^7.2.15",
     "@angular/router": "^7.2.15",
+    "@ngx-formly/core": "^5.1.5",
+    "@ngx-formly/material": "^5.1.5",
     "core-js": "^3.1.0",
+    "ngx-store": "^2.1.0",
     "npm-check-updates": "^3.1.9",
     "rxjs": "~6.5.2",
     "zone.js": "^0.8.29"

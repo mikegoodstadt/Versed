@@ -3,11 +3,12 @@ import { NgModule } from '@angular/core';
 import { RoutingModule } from './router/routing.module';
 import { HttpClientModule } from '@angular/common/http';
 // import { WebStorageModule } from 'ngx-store';
+import {ReactiveFormsModule} from '@angular/forms';
+import {FormlyModule} from '@ngx-formly/core';
+import {FormlyMaterialModule} from '@ngx-formly/material';
 
 import { VersedComponent } from './versed.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
-// import { LayoutModule } from '@angular/cdk/layout';
 import { LayoutModule } from './layout/layout.module';
 import { CharactersLibModule } from 'characters-lib';
 
@@ -20,12 +21,10 @@ import { CharactersLibModule } from 'characters-lib';
     RoutingModule,
     HttpClientModule,
     // WebStorageModule,
+    ReactiveFormsModule,
+    FormlyModule.forRoot(),
+    FormlyMaterialModule,
     BrowserAnimationsModule,
-    // MatToolbarModule,
-    // MatButtonModule,
-    // MatSidenavModule,
-    // MatIconModule,
-    // MatListModule,
     LayoutModule,
     CharactersLibModule
   ],

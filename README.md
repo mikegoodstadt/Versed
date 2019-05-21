@@ -1,6 +1,36 @@
 # Versed
+For a new web shop, we need a module that should display information about the characters of a very popular movie saga. Please provide an Angular/React web application. Use SWAPI (https://swapi.co)  as data source.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.6.
+### Task List
+- [x] Design a simple UI for the character’s page.
+- [ ] Implement the models
+- [ ] Implement the services
+- [ ] Create a sample working:
+  - [ ]  search page
+  - [ ]  detail page
+- [ ] Create generic avatar to use as picture for:
+  - [ ] human characters
+  - [ ] non-human characters
+- [ ] On the detail page please provide the following info:
+  - [ ] Picture (Generic human/non-human avatar)
+  - [ ] Name
+  - [ ] Gender
+  - [ ] Birth year
+  - [ ] Eye color
+  - [ ] Skin color
+  - [ ] Species
+
+### Deliverables
+- [ ] The app
+- [ ] Test plan
+- [ ] Please deliver scribbles of:
+  - [ ] the character’s page UI
+  - [ ] mockups
+  - [ ] diagrams
+- [ ] Description of how to run the app, step by step:
+  - [ ] for admin
+  - [ ] for user
+- [ ] Any documentation that you consider to be useful
 
 ## Development server
 

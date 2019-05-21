@@ -15,7 +15,28 @@
     "lib": [
       "dom",
       "es2018"
-    ]
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "shared-lib": [
+        "../../dist/shared-lib"
+      ],
+      "shared-lib/*": [
+        "../../dist/shared-lib/*"
+      ],
+      "datasets-lib": [
+        "../../dist/datasets-lib"
+      ],
+      "datasets-lib/*": [
+        "../../dist/datasets-lib/*"
+      ],
+      "forms-lib": [
+        "../../dist/forms-lib"
+      ],
+      "forms-lib/*": [
+        "../../dist/forms-lib/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "annotateForClosureCompiler": true,

@@ -1,3 +1,30 @@
-export declare class CharactersLibService {
-    constructor();
+import { OnInit } from '@angular/core';
+import { LocalStorageService } from 'ngx-store';
+import { DatasetsLibService } from 'datasets-lib';
+import { UuidService } from 'shared-lib';
+import { Observable } from 'rxjs';
+import { Character } from './models/character.model';
+export declare class CharactersLibService implements OnInit {
+    localStorageService: LocalStorageService;
+    uuidService: UuidService;
+    private datasetService;
+    private charactersStream;
+    private currentStream;
+    private initialized;
+    constructor(localStorageService: LocalStorageService, uuidService: UuidService, datasetService: DatasetsLibService);
+    readonly characters: Observable<Character[]>;
+    private setCharacters;
+    getCharacter(character?: any): Observable<Character>;
+    getCharacterById(uuid: number): Observable<Character>;
+    readonly current: Observable<Character>;
+    setCurrent(character: Character): void;
+    ngOnInit(): void;
+    init(): Promise<any>;
+    private loadCharacters;
+    private loadCurrent;
+    createCharacter(): Character;
+    addCharacters(charactersArray: any): void;
+    addCharacter(character: Character): void;
+    updateCharacter(character: Character): void;
+    deleteCharacter(character: Character): void;
 }

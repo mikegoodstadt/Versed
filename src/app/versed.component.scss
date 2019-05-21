@@ -3,16 +3,16 @@
   }
   
   /* HolyGrail Layout with CSSGrid Areas */
-  tk-header     { grid-area: header; }
+  versed-header     { grid-area: header; }
   router-outlet { grid-area: router; } /* Placeholder for router - HIDE! */
-  tk-sidebar    { grid-area: sidebar; }
-  tk-workspace  { grid-area: workspace; }
-  tk-footer     { grid-area: footer; }
+  versed-sidebar    { grid-area: sidebar; }
+  versed-characters  { grid-area: main; }
+  versed-footer     { grid-area: footer; }
   :host {
     display: grid;
     grid-template-areas:    "header header"
                             "router router"
-                            "sidebar"
+                            "sidebar main"
                             "footer footer";
     grid-template-columns:  0px 1fr;
     grid-template-rows:     50px
@@ -27,6 +27,7 @@
       grid-template-areas:    "header"
                               "router"
                               "sidebar"
+                              "main"
                               "footer";
       grid-template-columns:  100%;
       grid-template-rows:     50px

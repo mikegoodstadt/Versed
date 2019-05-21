@@ -1,0 +1,14 @@
+<form [formGroup]="form" (ngSubmit)="updateRecord(model)">
+  <formly-form [form]="form" [fields]="fields" [options]="options" [model]="model"></formly-form>
+  <mat-toolbar>
+    <span>
+      <button mat-stroked-button type="button" *ngIf="!create" (click)="deleteRecord(model)" class="btn btn-default" icon="pi pi-check">Delete</button>
+    </span>
+    <span class="ui-spacer"></span>
+    <span>
+      <button mat-stroked-button type="button" (click)="cancelEdit(model)"  class="btn btn-default" icon="pi pi-check">Cancel</button>
+      <button mat-stroked-button type="submit" class="btn btn-default" icon="pi pi-save">{{submitLabel}}</button>
+    </span>
+  </mat-toolbar>
+</form>
+<pre>{{form.value | json}}</pre>

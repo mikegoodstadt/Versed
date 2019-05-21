@@ -13,11 +13,11 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$versed-primary: mat-palette($mat-grey, 700, 300, 900);
-$versed-accent: mat-palette($mat-blue-grey, 400);
+$versed-primary: mat-palette($mat-blue-grey, 00);
+$versed-accent: mat-palette($mat-amber, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$versed-warn: mat-palette($mat-red, 500);
+$versed-warn: mat-palette($mat-deep-orange);
 
 // Create the theme object (a Sass map containing all of the palettes).
 $versed-theme: mat-light-theme($versed-primary, $versed-accent, $versed-warn);
